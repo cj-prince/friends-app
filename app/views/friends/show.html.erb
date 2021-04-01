@@ -1,0 +1,27 @@
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @friend.first_name %>
+    <%= @friend.last_name %>
+  </h1>
+  <p class="lead">
+    <strong>Email:</strong>
+    <%= @friend.email %><br/>
+    <strong>Twitter:</strong>
+    <%= @friend.twitter %><br/>
+    <strong>Twitter:</strong>
+    <%= @friend.twitter %><br/>
+    <strong>Facebook:</strong>
+    <%= @friend.facebook %>
+    
+  <p class="lead">
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-success" %>
+    <%= link_to 'Back', friends_path,class:"btn btn-dark" %>
+  </p>
+</div>
+
+
+
+
